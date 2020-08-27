@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Jeeya's Art Class</title>
+    <link rel="shortcut icon" href="https://github.com/BabaRakesh/BabaRakesh.github.io/blob/Jeeya's-Art-Class/logo-mini.png?raw=true" ype="image/x-icon " />
+    <meta name="description " content=" " />
+    <meta name="viewport " content="width=device-width, initial-scale=1 " />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        body {
+            background-color: #dddddd;
+            grid-template-columns: 100%;
+            grid-template-rows: 20% 80%;
+            grid-template-areas: "header" "slider";
+        }
+        
+        li,
+        a,
+        button {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            color: #000000;
+            text-decoration: none;
+        }
+        /* HEADER STYLING */
+        
+        header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 30px 10%;
+            background-color: #f4f4f8;
+            width: 100%;
+            position: fixed;
+            height: 15%;
+            top: 0;
+            grid-area: header;
+        }
+        
+        #heading {
+            cursor: pointer;
+            font-family: "Comfortaa", cursive;
+            font-size: 30px;
+            font-weight: 700;
+            color: hsl(0, 0%, 0%);
+            margin-right: auto;
+            text-align: right;
+            position: relative;
+        }
+        
+        .logo {
+            cursor: pointer;
+            width: 68px;
+            height: 64px;
+        }
+        
+        .nav__links {
+            list-style: none;
+        }
+        
+        .nav__links li {
+            display: inline-block;
+            padding: 0px 20px;
+        }
+        
+        .nav__links li a {
+            transition: all 0.3s ease 0s;
+        }
+        
+        .nav__links li a:hover {
+            color: #e24e42;
+        }
+        
+        .menu {
+            display: none;
+        }
+        
+        button {
+            margin-left: 20px;
+            padding: 9px 25px;
+            background-color: rgba(235, 110, 128, 1);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+        }
+        
+        button:hover {
+            background-color: rgba(235, 110, 128, 0.5);
+        }
+        
+        @media only screen and (max-width: 1038px) {
+            .nav__links,
+            .cta {
+                display: none;
+            }
+            .menu {
+                display: inherit;
+            }
+        }
+        /*Mobile Nav*/
+        
+        .overlay {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            background-color: #eb6e80;
+            overflow-x: hidden;
+            transition: all 0.5s ease 0s;
+        }
+        
+        .overlay__content {
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .overlay a {
+            padding: 15px;
+            font-size: 36px;
+            display: block;
+            transition: all 0.3s ease 0s;
+        }
+        
+        .overlay a:hover,
+        .overlay a:focus {
+            color: #008f95;
+        }
+        
+        .overlay .close {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+        }
+        
+        @media screen and (max-hieght: 450px) {
+            .overlay a {
+                font-size: 20px;
+            }
+            .overlay .close {
+                font-size: 40px;
+                top: 15px;
+                right: 35px;
+            }
+        }
+        /* Carousel Styling */
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src=" https://github.com/BabaRakesh/BabaRakesh.github.io/blob/Jeeya's-Art-Class/logo-mini.png?raw=true" alt="logo" />
+        <h1 id="heading">jeeya's art class</h1>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="#">Updates</a></li>
+                <li><a href="#">Classes</a></li>
+                <li><a href="#">Levels & Pricing</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#"><button>Contact</button></a
+      ><a onclick="openNav()" class="menu" href="# "><button>Menu</button></a>
+    </header>
+    <div id="mobile__menu" class="overlay">
+        <a href="#" class="close" onclick="closeNav()">&times; </a>
+        <div class="overlay__content">
+            <a href="#">Updates</a><a href="#">Classes</a
+        ><a href="#">Levels & Pricing</a><a href="#">Contact</a>
+        </div>
+    </div>
+
+    <script type="text/javascript ">
+        function openNav() {
+            document.getElementById("mobile__menu").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mobile__menu").style.width = "0%";
+        }
+    </script>
+</body>
+
+</html>
+
+</html>
