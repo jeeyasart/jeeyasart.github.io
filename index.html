@@ -41,7 +41,7 @@
             padding: 30px 10%;
             background-color: #f4f4f8;
             width: 100%;
-            height: 15%;
+            height: 15vh;
             top: 0;
             grid-area: header;
         }
@@ -162,15 +162,23 @@
         
         .slideshow-container {
             width: 100%;
-            height: 85%;
-            position: relative;
+            height: 85vh;
+            position: absolute;
+            bottom: 0px;
             margin: auto;
+            margin-bottom: 0;
             overflow: hidden;
             background: #e9b000;
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
+        }
+        
+        .slideshow-container img {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
         }
         
         .mySlides {
@@ -210,14 +218,15 @@
         }
         
         #dot-nav {
-            margin-left: 15vh;
-            margin-right: 15vh;
+            margin-left: auto;
+            margin-right: auto;
         }
         
         .dot {
             cursor: pointer;
             height: 15px;
             width: 15px;
+            margin-left: auto;
             margin: 0 2px;
             background-color: #e24e42;
             border-radius: 50%;
@@ -240,19 +249,19 @@
         
         @-webkit-keyframes fade {
             from {
-                opacity: .4
+                opacity: 0.4;
             }
             to {
-                opacity: 1
+                opacity: 1;
             }
         }
         
         @keyframes fade {
             from {
-                opacity: .4
+                opacity: 0.4;
             }
             to {
-                opacity: 1
+                opacity: 1;
             }
         }
     </style>
@@ -281,44 +290,35 @@
     </div>
     <div class="slideshow-container">
         <div class="mySlides fade">
-            <img src="https://github.com/jeeyasart/jeeyasart.github.io/blob/master/Art/1.png?raw=true" alt="Drawing">
-
+            <img src="https://github.com/jeeyasart/jeeyasart.github.io/blob/master/Art/1.png?raw=true" alt="Drawing" />
         </div>
         <div class="mySlides fade">
-            <img src="https://github.com/jeeyasart/jeeyasart.github.io/blob/master/Art/2.png?raw=true" alt="Drawing">
-
+            <img src="https://github.com/jeeyasart/jeeyasart.github.io/blob/master/Art/2.png?raw=true" alt="Drawing" />
         </div>
         <div class="mySlides fade">
-            <img src="https://github.com/jeeyasart/jeeyasart.github.io/blob/master/Art/3.png?raw=true" alt="Drawing">
-
+            <img src="https://github.com/jeeyasart/jeeyasart.github.io/blob/master/Art/3.png?raw=true" alt="Drawing" />
         </div>
         <div class="mySlides fade">
-            <img src="https://github.com/jeeyasart/jeeyasart.github.io/blob/master/Art/4.png?raw=true" alt="Drawing">
-
+            <img src="https://github.com/jeeyasart/jeeyasart.github.io/blob/master/Art/4.png?raw=true" alt="Drawing" />
         </div>
         <div class="mySlides fade">
-            <img src="https://github.com/jeeyasart/jeeyasart.github.io/blob/master/Art/5.png?raw=true" alt="Drawing">
-
+            <img src="https://github.com/jeeyasart/jeeyasart.github.io/blob/master/Art/5.png?raw=true" alt="Drawing" />
         </div>
         <div class="mySlides fade">
-            <img src="https://github.com/jeeyasart/jeeyasart.github.io/blob/master/Art/6.png?raw=true" alt="Drawing">
-
+            <img src="https://github.com/jeeyasart/jeeyasart.github.io/blob/master/Art/6.png?raw=true" alt="Drawing" />
         </div>
         <div class="mySlides fade">
-            <img src="https://github.com/jeeyasart/jeeyasart.github.io/blob/master/Art/7.png?raw=true" alt="Drawing">
-
+            <img src="https://github.com/jeeyasart/jeeyasart.github.io/blob/master/Art/7.png?raw=true" alt="Drawing" />
         </div>
         <div class="mySlides fade">
-            <img src="https://github.com/jeeyasart/jeeyasart.github.io/blob/master/Art/8.png?raw=true" alt="Drawing">
-
+            <img src="https://github.com/jeeyasart/jeeyasart.github.io/blob/master/Art/8.png?raw=true" alt="Drawing" />
         </div>
         <div class="mySlides fade">
-            <img src="https://github.com/jeeyasart/jeeyasart.github.io/blob/master/Art/9.png?raw=true" alt="Drawing">
-
+            <img src="https://github.com/jeeyasart/jeeyasart.github.io/blob/master/Art/9.png?raw=true" alt="Drawing" />
         </div>
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        <div id="dot-nav" style="text-align:center">
+        <div id="dot-nav" style="text-align: center">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
@@ -330,8 +330,6 @@
             <span class="dot" onclick="currentSlide(9)"></span>
         </div>
     </div>
-    <br>
-
 
 
     <script type="text/javascript ">
@@ -342,6 +340,8 @@
         function closeNav() {
             document.getElementById("mobile__menu").style.width = "0%";
         }
+
+
         var slideIndex = 1;
         showSlides(slideIndex);
 
