@@ -1,0 +1,124 @@
+ @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+ .slideshow-container {
+     width: 100%;
+     height: 85vh;
+     margin-top: auto;
+     position: absolute;
+     bottom: 0px;
+     margin: auto;
+     margin-bottom: 0;
+     overflow: hidden;
+     background: #e9b000;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+ 
+ .slideshow-container img {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 0px;
+     margin-bottom: 0px;
+     height: 70vh;
+     width: 100vh;
+ }
+ 
+ .mySlides {
+     display: none;
+     padding: 5px;
+     align-self: center;
+ }
+ 
+ .prev,
+ .next {
+     cursor: pointer;
+     position: absolute;
+     top: 50%;
+     width: auto;
+     margin-top: -22px;
+     padding: 16px;
+     color: #eb6e80;
+     font-weight: bold;
+     font-size: 18px;
+     transition: 0.6s ease;
+     border-radius: 0 3px 3px 0;
+     user-select: none;
+     align-self: center;
+ }
+ 
+ .prev {
+     left: 0px;
+     border-radius: 3px 0 0 3px;
+ }
+ 
+ .next {
+     right: 0;
+     border-radius: 3px 0 0 3px;
+ }
+ 
+ .prev:hover,
+ .next:hover {
+     background-color: #008f95;
+ }
+ 
+ #dot-nav {
+     margin-left: auto;
+     margin-right: auto;
+     align-self: flex-end;
+ }
+ 
+ .dot {
+     cursor: pointer;
+     height: 15px;
+     width: 15px;
+     margin-left: auto;
+     margin: 0 2px;
+     background-color: #e24e42;
+     border-radius: 50%;
+     display: inline-block;
+     transition: background-color 0.6s ease;
+ }
+ 
+ .active,
+ .dot:hover {
+     background-color: #008f95;
+ }
+ 
+ @media only screen and (max-width: 1038px) {
+     .slideshow-container img {
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+         margin-top: 0px;
+         margin-bottom: 0px;
+         height: 30vh;
+         width: 50vh;
+     }
+ }
+ /* Fading animation */
+ 
+ .fade {
+     -webkit-animation-name: fade;
+     -webkit-animation-duration: 1.5s;
+     animation-name: fade;
+     animation-duration: 1.5s;
+ }
+ 
+ @-webkit-keyframes fade {
+     from {
+         opacity: 0.4;
+     }
+     to {
+         opacity: 1;
+     }
+ }
+ 
+ @keyframes fade {
+     from {
+         opacity: 0.4;
+     }
+     to {
+         opacity: 1;
+     }
+ }
