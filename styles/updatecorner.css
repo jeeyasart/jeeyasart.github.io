@@ -2,7 +2,7 @@
     position: relative;
     grid-area: update;
     background-color: #008f95;
-    height: 100vh;
+    height: 85vh;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -14,7 +14,8 @@
 .updates {
     font-size: 25px;
     text-align: center;
-    padding: 5px;
+    padding: 30px;
     margin-right: 5%;
     margin-left: 5%;
+    line-height: 30px;
 }

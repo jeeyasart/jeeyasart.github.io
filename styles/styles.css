@@ -13,6 +13,35 @@ body {
     grid-template-areas: "header" "slider" "update";
 }
 
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 2px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #e9b000;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: lightcoral;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: peachpuff;
+}
+
 li,
 a,
 button {
