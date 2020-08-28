@@ -11,15 +11,17 @@
     <link rel="stylesheet" href="./styles/carousel.css" />
     <link rel="stylesheet" href="./styles/header-menu.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/updatecorner.css">
 </head>
 
 <body>
+    <!-- !Navigation -->
     <header>
         <img class="logo" src=" https://github.com/BabaRakesh/BabaRakesh.github.io/blob/Jeeya's-Art-Class/logo-mini.png?raw=true" alt="logo" />
         <h1 id="heading">jeeya's art class</h1>
         <nav>
             <ul class="nav__links">
-                <li><a href="#">Updates</a></li>
+                <li><a href="#update-corner">Updates</a></li>
                 <li><a href="#">Classes</a></li>
                 <li><a href="#">Levels & Pricing</a></li>
             </ul>
@@ -30,13 +32,14 @@
     <div id="mobile__menu" class="overlay">
         <a href="#" class="close" onclick="closeNav()">&times; </a>
         <div class="overlay__content">
-            <a href="#">Updates</a>
-            <a href="#">Classes</a>
-            <a href="#">Levels & Pricing</a>
-            <a href="#">Contact</a>
+            <a href="#update-corner" onclick="closeNav()">Updates</a>
+            <a href="#" onclick="closeNav()">Classes</a>
+            <a href="#" onclick="closeNav()">Levels & Pricing</a>
+            <a href="#" onclick="closeNav()">Contact</a>
         </div>
     </div>
-
+    <script src="./script/nav.js"></script>
+    <!-- !Carousel -->
     <div class="slideshow-container">
         <img class="mySlides fade" src="https://github.com/jeeyasart/jeeyasart.github.io/blob/master/Art/1.png?raw=true" alt="Drawing" />
         <img class="mySlides fade" src="https://github.com/jeeyasart/jeeyasart.github.io/blob/master/Art/2.png?raw=true" alt="Drawing" />
@@ -48,7 +51,7 @@
         <img class="mySlides fade" src="https://github.com/jeeyasart/jeeyasart.github.io/blob/master/Art/8.png?raw=true" alt="Drawing" />
         <img class="mySlides fade" src="https://github.com/jeeyasart/jeeyasart.github.io/blob/master/Art/9.png?raw=true" alt="Drawing" />
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a> ?
         <div id="dot-nav" style="text-align: center">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
@@ -62,49 +65,22 @@
         </div>
     </div>
 
-    <script type="text/javascript ">
-        function openNav() {
-            document.getElementById("mobile__menu").style.width = "100%";
-        }
+    <script src="./script/carousel.js"></script>
+    <!-- !Updates -->
+    <div class="element-even" id="update-corner">
+        <h2>Updates</h2>
+        <p class="updates">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui at ad facilis ducimus esse. Consectetur explicabo nostrum dolorum temporibus, nisi hic. Dolore harum libero incidunt deserunt, dolorum accusantium molestias rem.</p>
+        <p class="updates">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui at ad facilis ducimus esse. Consectetur explicabo nostrum dolorum temporibus, nisi hic. Dolore harum libero incidunt deserunt, dolorum accusantium molestias rem.</p>
+        <p class="updates">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui at ad facilis ducimus esse. Consectetur explicabo nostrum dolorum temporibus, nisi hic. Dolore harum libero incidunt deserunt, dolorum accusantium molestias rem.</p>
+        <p class="updates">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui at ad facilis ducimus esse. Consectetur explicabo nostrum dolorum temporibus, nisi hic. Dolore harum libero incidunt deserunt, dolorum accusantium molestias rem.</p>
+        <p class="updates">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui at ad facilis ducimus esse. Consectetur explicabo nostrum dolorum temporibus, nisi hic. Dolore harum libero incidunt deserunt, dolorum accusantium molestias rem.</p>
+    </div>
 
-        function closeNav() {
-            document.getElementById("mobile__menu").style.width = "0%";
-        }
 
 
-        var slideIndex = 1;
-        showSlides(slideIndex);
 
-        // Next/previous controls
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        // Thumbnail image controls
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {
-                slideIndex = 1
-            }
-            if (n < 1) {
-                slideIndex = slides.length
-            }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-    </script>
 </body>
+
+</html>
 
 </html>
