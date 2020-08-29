@@ -1,14 +1,10 @@
 #update-corner {
-    position: relative;
     grid-area: update;
-    background-color: #008f95;
-    height: 85vh;
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: space-evenly;
-    color: ivory;
-    font-weight: medium;
+    padding-top: 15vh;
 }
 
 .updates {
