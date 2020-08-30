@@ -17,6 +17,11 @@
     width: 100vh;
 }
 
+#slideshow-container h2 {
+    align-self: center;
+    padding: 15px;
+}
+
 .mySlides {
     display: none;
     padding: 5px;
