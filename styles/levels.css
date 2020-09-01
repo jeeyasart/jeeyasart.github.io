@@ -1,13 +1,36 @@
 #levels-pricing img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
 }
 
 #levels-pricing {
     grid-area: levels;
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding-top: 15vh;
+}
+
+#levels-pricing h2 {
+    padding-bottom: 5%;
+}
+
+#levels__container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.levels {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.levels h4 {
+    font-size: 2rem;
+    padding: 5px;
+    font-weight: 700;
 }
