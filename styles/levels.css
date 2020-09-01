@@ -10,9 +10,11 @@
     align-items: center;
     justify-content: center;
     padding-top: 15vh;
+    text-align: center;
 }
 
 #levels-pricing h2 {
+    font-size: 5vh;
     padding-bottom: 5%;
 }
 
@@ -33,4 +35,26 @@
     font-size: 2rem;
     padding: 5px;
     font-weight: 700;
+}
+
+@media only screen and (max-width: 1200px) {
+    #levels__container {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    #levels-pricing img {
+        width: 250px;
+        height: 250px;
+    }
+    .levels h4 {
+        font-size: 2rem;
+        padding: 3px;
+        font-weight: 700;
+    }
+    #levels-pricing h2 {
+        font-size: 4vh;
+        text-align: center;
+    }
 }
