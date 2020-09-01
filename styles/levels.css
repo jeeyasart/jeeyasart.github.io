@@ -1,0 +1,13 @@
+#levels-pricing img {
+    width: 200px;
+    height: 200px;
+}
+
+#levels-pricing {
+    grid-area: levels;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15vh;
+}
