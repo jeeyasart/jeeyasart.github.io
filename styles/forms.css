@@ -1,0 +1,107 @@
+#contact {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact-form {
+    background: #008f95;
+    border-radius: 25px;
+    padding: 5%;
+}
+
+input[type=text] {
+    width: 40vw;
+    border-color: transparent;
+    border-radius: 25px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+}
+
+textarea {
+    width: 100%;
+    border-radius: 25px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+}
+
+label {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+input[type=submit] {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(235, 110, 128, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+input[type=submit]:hover {
+    background-color: rgba(235, 110, 128, 0.8);
+}
+
+@media only screen and (max-width: 1200px) {
+    #contact {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    input[type=text] {
+        width: 80vw;
+        border-color: transparent;
+        border-radius: 25px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color: #000000;
+        text-decoration: none;
+    }
+    textarea {
+        width: 100%;
+        border-radius: 25px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        color: #000000;
+        text-decoration: none;
+    }
+    label {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 1.5rem;
+        color: whitesmoke;
+        text-decoration: none;
+    }
+}
