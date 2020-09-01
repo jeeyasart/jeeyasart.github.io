@@ -1,9 +1,9 @@
-#levels-pricing img {
+#levels__div img {
     width: 300px;
     height: 300px;
 }
 
-#levels-pricing {
+#levels__div {
     grid-area: levels;
     display: flex;
     flex-flow: column;
@@ -13,7 +13,7 @@
     text-align: center;
 }
 
-#levels-pricing h2 {
+#levels__div h2 {
     font-size: 5vh;
     padding-bottom: 5%;
 }
@@ -44,16 +44,16 @@
         grid-template-columns: 1fr;
         text-align: center;
     }
-    #levels-pricing img {
-        width: 250px;
-        height: 250px;
+    #levels__div img {
+        width: 15vh;
+        height: 15vh;
     }
     .levels h4 {
         font-size: 2rem;
         padding: 3px;
         font-weight: 700;
     }
-    #levels-pricing h2 {
+    #levels__div h2 {
         font-size: 4vh;
         text-align: center;
     }
