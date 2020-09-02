@@ -54,6 +54,7 @@ function validateForm() {
         alert("Form not submitted"); //Validation Message
         return false;
     } else {
+        alert("Your Response Has Been Recorded");
         submitted = true;
         return true;
     }
