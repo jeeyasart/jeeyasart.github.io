@@ -149,9 +149,10 @@
     </div>
     <!-- !Contact Form -->
     <div class="element-even" id="contact">
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='./index.html';}"></iframe>
         <h2>Contact Us</h2>
         <div class="contact-form">
-            <form action="https://docs.google.com/forms/u/2/d/e/1FAIpQLScrVoB6aRa5YWLgtvagY7AbmBSruEyl9HsnVOBsmFItQHNSgA/formResponse" method="POST" onsubmit="return validateForm()">
+            <form action="https://docs.google.com/forms/u/2/d/e/1FAIpQLScrVoB6aRa5YWLgtvagY7AbmBSruEyl9HsnVOBsmFItQHNSgA/formResponse" method="POST" target="hidden_iframe" onsubmit="return validateForm()">
                 <label for="wname">Ward's Name</label><br />
                 <input required type="text" name="entry.2005620554" id="wname" /><br />
                 <label for="pname">Parent's Name</label><br />
@@ -159,7 +160,7 @@
                 <label for="email">Email</label><br />
                 <input required type="text" name="entry.1065046570" id="email" /><br />
                 <label for="message">Anything specific you want to ask?</label><br />
-                <textarea name="entry.839337160" id="message " cols="30 " rows="10 ">Your Message!</textarea>
+                <textarea name="entry.839337160" id="message " cols="30 " rows="10 "></textarea>
                 <br /><br />
                 <input type="submit" value="Contact Us!" />
             </form>
