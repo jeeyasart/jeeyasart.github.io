@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./styles/header-menu.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/updatecorner.css" />
-
+    <link rel="stylesheet" href="./styles/levels.css" />
     <link rel="stylesheet" href="./styles/forms.css" />
     <link rel="stylesheet" href="./styles/fontawesome.min.css">
     <link rel="stylesheet" href="./styles/footer.css">
@@ -28,7 +28,7 @@
             <ul class="nav__links">
                 <li><a href="#update-corner">Updates</a></li>
                 <li><a href="#classes">Classes</a></li>
-
+                <li><a href="#levels__div">Levels</a></li>
             </ul>
         </nav>
         <!--  -->
@@ -41,7 +41,7 @@
         <div class="overlay__content">
             <a href="#update-corner" onclick="closeNav()">Updates</a>
             <a href="#classes" onclick="closeNav()">Classes</a>
-
+            <a href="#levels__div" onclick="closeNav()">Levels</a>
             <a href="#contact" onclick="closeNav()">Contact</a>
         </div>
     </div>
@@ -107,6 +107,13 @@
                 </p>
             </div>
             <div class="class__elements">
+                <h3>Story telling</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus culpa, vero aperiam voluptatibus magnam odit natus assumenda! Corrupti aperiam illo, reprehenderit quasi animi at suscipit sequi. Laudantium nobis voluptate quo accusamus! Enim esse alias
+                    rem, hic corporis rerum amet soluta qui quo doloremque ullam dolorem modi adipisci voluptatum quis dolorum!
+                </p>
+            </div>
+            <div class="class__elements">
                 <h3>Calligraphy</h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus culpa, vero aperiam voluptatibus magnam odit natus assumenda! Corrupti aperiam illo, reprehenderit quasi animi at suscipit sequi. Laudantium nobis voluptate quo accusamus! Enim esse alias
@@ -115,10 +122,35 @@
             </div>
         </div>
     </div>
-
-
+    <!-- !Levels and Pricing -->
+    <div class="element-odd" id="levels__div">
+        <h2>Levels</h2>
+        <div id="levels__container">
+            <div class="levels">
+                <img src="./svg/Basic.svg" alt="Basic Level" />
+                <h4>Basic</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, culpa!
+                </p>
+            </div>
+            <div class="levels">
+                <img src="./svg/Intermediate.svg" alt="Basic Level" />
+                <h4>Intermediate</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, culpa!
+                </p>
+            </div>
+            <div class="levels">
+                <img src="./svg/Advanced.svg " alt="Basic Level " />
+                <h4>Advanced</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, culpa!
+                </p>
+            </div>
+        </div>
+    </div>
     <!-- !Contact Form -->
-    <div class="element-odd" id="contact">
+    <div class="element-even" id="contact">
         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='./index.html';}"></iframe>
         <h2>Contact Us</h2>
         <div class="contact-form">
